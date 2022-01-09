@@ -1,0 +1,92 @@
+html {
+    cursor: url(imagens/mata_mosquito.png) 30 30, auto;
+}
+
+body {
+    background-image: url(imagens/bg.jpg);
+
+}
+
+.mosquito1 {
+    width: 50px;
+    height: 50px;
+}
+
+.mosquito2 {
+    width: 70px;
+    height: 70px;
+}
+
+.mosquito3 {
+    width: 90px;
+    height: 90px;
+}
+
+.ladoA {
+    transform: scaleX(1);
+}
+
+.ladoB {
+    transform: scaleX(-1);
+}
+
+.painel {
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    bottom: 0px;
+    border-top: 1px solid #fff;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.vidas {
+    float: left;
+}
+
+.cronometro {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background: #2c2c2c;
+    padding: 8px;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+}
+
+.button1 {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background: rgb(235, 72, 72);
+    padding: 8px;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+}
+
+select {
+    width: 160px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: #8f8888;
+    font-size: .9em;
+}

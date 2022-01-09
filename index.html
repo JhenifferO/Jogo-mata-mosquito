@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo.css">
+        
+        <script>
+            function iniciarJogo() {
+                var nivel = document.getElementById('nivel').value
+                
+                if(nivel === '') {
+                    alert('Selecione um nível para jogar')
+                    return false
+                }
+
+                window.location.href = 'app.html?' +  nivel
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <img src="imagens/game.png">
+
+            <select id="nivel">
+                <option value="">-- Selecione o nível --</option>
+                <option value="facil">Fácil</option>
+                <option value="medio">Médio</option>
+                <option value="dificil">Difícil</option>
+            </select>
+
+            <button class="button1" onclick="iniciarJogo()"> 
+                Iniciar Jogo
+            </button>
+        </div>
+
+    </body>
+</html>
